@@ -17,10 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="豆花君">
   <meta name="keywords" content="">
-  <title>标签 - 豆花君</title>
+  <title>关于 - 豆花君</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -43,7 +56,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -144,7 +157,7 @@
           <div class="container page-header text-center fade-in-up">
             <span class="h2" id="subtitle">
               
-                标签
+                关于
               
             </span>
 
@@ -163,13 +176,27 @@
         <div class="py-5" id="board"
           >
           
+            <div class="about-avatar">
+              <img src="/img/avatar.png" srcset="/img/loading.gif"
+                   class="img-fluid" alt="avatar">
+            </div>
+          
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center tagcloud">
-  <a href="/tags/%E5%8F%A5%E5%AD%90/" style="font-size: 15px; color: #bbe">句子</a>
+<div class="text-center">
+  <div class="about-info">
+    <div class="about-name">豆花君</div>
+    <div class="about-intro"></div>
+    <div class="about-icons">
+      
+    </div>
+  </div>
+</div>
+<div class="mt-5 markdown-body">
+  
 </div>
 
               </div>
@@ -280,6 +307,21 @@
 
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
